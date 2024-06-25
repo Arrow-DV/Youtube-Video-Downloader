@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Youtube Video Downloader</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color : rgb(255, 126, 128);</string>
+  </property>
+  <widget class="QLineEdit" name="link">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>451</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:solid;
+background-color:rgb(138, 46, 69);
+border-radius:3px;
+border-color:white;
+font-size:15px;
+color:white;</string>
+   </property>
+   <property name="placeholderText">
+    <string>insert the link here</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="downloadbtn">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>140</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+border-radius: 5px;
+background-color :rgb(138, 46, 69);
+color : white;
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Download</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="resolution">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>80</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background-color:rgb(138, 46, 69);
+font-size:20px;
+border-radius:5px;
+color:white;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>360p</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>480p</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>720p</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1080p</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="video_img">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>111</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : white; 
+border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="video_title">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>140</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+background-color :rgb(138, 46, 69);
+border-radius:5px;
+color : white;</string>
+   </property>
+   <property name="text">
+    <string>Video name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>video_title</zorder>
+  <zorder>link</zorder>
+  <zorder>downloadbtn</zorder>
+  <zorder>resolution</zorder>
+  <zorder>video_img</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
